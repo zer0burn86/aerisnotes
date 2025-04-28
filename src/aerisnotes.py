@@ -3,7 +3,7 @@
 # Start: Mai 2025
 
 def begruessung():
-    pass
+    print("Willkommen bei AerisNotes")
 
 def eingabe_erfassen():
     pass
