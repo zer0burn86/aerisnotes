@@ -2,13 +2,23 @@
 # Autor: Pascal Wengi
 # Start: Mai 2025
 
-def willkommen():
-    print("Willkommen bei AerisNotes!")
-    print("Dieses Programm hilft dir, deine Ideen zu ordnen und zu strukturieren.")
+def begruessung():
+    pass
 
-if __name__ == "__main__":
-    willkommen()
+def eingabe_erfassen():
+    pass
 
-user_idee = input("Bitte gib deine Idee ein: ")
+def anfrage_an_openai(text):
+    pass
 
-print("Deine Idee lautet: ", user_idee)
+def antwort_verarbeiten(api_response):
+    pass
+
+def ergebnis_anzeigen(cl_zf):
+    pass
+
+def ergebnis_speichern(cl_zf):
+    pass
+
+def abfrage_neue_idee():
+    pass
