@@ -73,7 +73,16 @@ Speicherung der Ergebnisse als JSON
 
    pip install -r requirements.txt
 
- .env File erstellen mit Inhalt "OPENAI_API_KEY=dein-api-key-hier"  
+ .env File erstellen mit Inhalt "OPENAI_API_KEY=dein-api-key-hier" 
+
+## Roadmap
+
+in order of priorities:
+- Prompt-Definition für openAI
+- Definition und Implementierung Clustering
+- Ausgabe von Zusammenfassung und Cluster
+- Speicherfunktion und Ablage der responses von openAI
+--> Erreichung MVP
 
 ## Lizenz
 
