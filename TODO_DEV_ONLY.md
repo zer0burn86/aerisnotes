@@ -1,7 +1,7 @@
 ## Fahrplan: Prompt & Behaviour in Aeris Notes
 
 ### 1. Grundfunktionalität vorbereiten
-- [ ] Erstellung von `default.md` im Unterordner `/Persona`
+- [x] Erstellung von `default.md` im Unterordner `/Persona`
 - [ ] Noch KEIN Dropdown und KEIN Button – Fokus auf einfache Anbindung
 
 ---

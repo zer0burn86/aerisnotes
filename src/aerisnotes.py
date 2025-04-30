@@ -24,11 +24,19 @@ def eingabe_erfassen():
         print("Oups, da ist was schief gelaufen. Bitte teile mir deine Idee nochmal mit.")      # Fallback Prozess falls User nur Leerzeichen tippt
         return eingabe_erfassen()
 
-def anfrage_an_openai(text):
-    print("Sende Anfrage an OpenAI... ")
+def anfrage_an_openai(text, persona=None):
+    if persona is None or persona == "":
+        filename = "personas/default.md"
+    else:
+        pass # Hier kommt später das Mapping für Personas
+
+    with open(filename, "r", encoding="utf-8") as file:
+        instructions = file.read()
+
     response = client.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=[
+            {"role": "developer", "content": instructions},
             {"role": "user", "content": text}
         ]
     )
@@ -55,3 +63,4 @@ def test():
 
 begruessung()
 test()
+
