@@ -25,7 +25,7 @@
 ---
 
 ### 5. Dynamisches Mapping vorbereiten
-- [ ] Erstellung von `persoenlichkeiten.json` im Ordner `/Persona`  
+- [ ] Erstellung von `persoenlichkeiten.json` im Ordner `/Personas`  
 - [ ] Struktur: Key = Rollenname (z. B. "Pirat"), Value = Dateiname (z. B. "persona_pirat.md")
 - [ ] Definition des Dropdown-Menüs über `persoenlichkeiten.keys()`
 
