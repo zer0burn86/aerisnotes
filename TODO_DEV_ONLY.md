@@ -44,4 +44,18 @@
 
 ---
 
+## 🌐 Integrationserweiterung (Phase 2)
+
+Ziel: Zugriff auf Aeris Notes von externen Quellen ermöglichen (z. B. WhatsApp, Web-App)
+
+Anforderungen:
+- [ ] Speichersystem modular entkoppeln (Input-unabhängig)
+- [ ] API- oder Funktionsschnittstellen für:
+      - Idee erfassen
+      - Idee abfragen
+- [ ] Klare Trennung von UI (Konsole, WhatsApp etc.) und Logik
+- [ ] Optional: Authentifizierung oder Benutzerkennung pro Idee (später)
+
+Status: Geplant für Phase 2 – nach Abschluss von Speicherung & Abfrage-Modulen
+
 *Letzte Änderung durch zer0burn, Stand: 30.04.2025
