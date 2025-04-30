@@ -5,6 +5,10 @@ import openai
 from dotenv import load_dotenv
 import os
 from openai import OpenAI
+import json
+
+with open("personas/persoenlichkeiten.json", "r", encoding="utf-8") as file:
+    persona_map = json.load(file)
 
 load_dotenv() 
 
@@ -25,11 +29,8 @@ def eingabe_erfassen():
         return eingabe_erfassen()
 
 def anfrage_an_openai(text, persona=None):
-    if persona is None or persona == "":
-        filename = "personas/default.md"
-    else:
-        pass # Hier kommt später das Mapping für Personas
-
+    filename = persona_map.get(persona, "personas/default.md")
+        
     with open(filename, "r", encoding="utf-8") as file:
         instructions = file.read()
 

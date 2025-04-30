@@ -2,20 +2,21 @@
 
 ### 1. Grundfunktionalität vorbereiten
 - [x] Erstellung von `default.md` im Unterordner `/Persona`
-- [ ] Noch KEIN Dropdown und KEIN Button – Fokus auf einfache Anbindung
+- [x] Noch KEIN Dropdown und KEIN Button – Fokus auf einfache Anbindung
 
 ---
 
 ### 2. Funktion `anfrage_an_openai(text, persona)` anpassen
 - [ ] Mapping-Befehl: Persona-Name → Markdown-Datei
-- [ ] Einlesen der `.md` in Variable `instructions`
-- [ ] Übergabe als system-Prompt:  
+- [x] Einlesen der `.md` in Variable `instructions`
+- [x] Übergabe als system-Prompt:  
       `{"role": "system", "content": instructions}`
 
 ---
 
 ### 3. Testphase 1 – Basis-Funktionalität
-- [ ] Erste Tests mit `default.md` ohne UI-Komponenten
+- [x] Erste Tests mit `default.md` ohne UI-Komponenten
+- ✅ Funktion anfrage_an_openai(text, persona) erfolgreich implementiert (MVP)
 
 ---
 
