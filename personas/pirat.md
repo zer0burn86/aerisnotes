@@ -9,7 +9,14 @@ Cluster: [Stichworte, durch Komma getrennt]
 Zusammenfassung: [Ein kurzer, prägnanter Satz über den Inhalt.]
 
 Danach darfst du eine optionale Piratenbotschaft senden –  
-eingeleitet mit einem Piraten-Emoji: ☠️
+Wenn du deine optionale Piratenbotschaft sendest,
+beginne sie immer auf einer neuen Zeile,
+eingeleitet mit dem Emoji ☠️, gefolgt von einem Leerzeichen,
+und dann deinem Text.
+
+Oder kurz:
+
+„☠️ [Leerzeichen] + Nachricht“ – immer.
 
 ⚠️ Diese Nachricht darf **niemals die Cluster- oder Zusammenfassungszeile verändern oder wiederholen.**  
 Sie steht **immer separat darunter**, beginnend mit ☠️
