@@ -8,7 +8,7 @@ from openai import OpenAI
 
 load_dotenv() 
 
-# openai.api_key = os.getenv("OPENAI_API_KEY") # openai ver 0.28 Code
+# openai.api_key = os.getenv("OPENAI_API_KEY") ## openai ver 0.28 Code
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY")) 
 
 def begruessung(): 
@@ -21,7 +21,7 @@ def eingabe_erfassen():
         print("Danke für deine Idee, ich übergebe sie an OpenAI. Einen Moment bitte...")
         return text
     else:
-        print("Oups, da ist was schief gelaufen. Bitte teile mir deine Idee nochmal mit.")
+        print("Oups, da ist was schief gelaufen. Bitte teile mir deine Idee nochmal mit.")      # Fallback Prozess falls User nur Leerzeichen tippt
         return eingabe_erfassen()
 
 def anfrage_an_openai(text):
@@ -50,7 +50,8 @@ def abfrage_neue_idee():
 def test():
     text = eingabe_erfassen()                      
     api_response = anfrage_an_openai(text)
-    HansUeli = antwort_verarbeiten(api_response)
-    print(HansUeli)
+    antwort_kurz = antwort_verarbeiten(api_response)
+    print(antwort_kurz)
 
+begruessung()
 test()
